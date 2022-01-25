@@ -1,0 +1,13 @@
+a=input('Please enter the word or sentence you want to check if it\'s a palindrome:  ')
+
+a=a.replace(' ','').replace('-','').lower()
+list_word=list(a)
+n= len(list_word)
+i=0
+for i in range(int(abs(n/2))):
+    if list_word[i]==list_word[n-(i+1)]:
+        print(True)
+        break
+    else:
+        print(False)
+        break
